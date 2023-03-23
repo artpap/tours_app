@@ -5,7 +5,7 @@ import Tours from './Tours';
 const url = 'https://course-api.com/react-tours-project';
 
 const App = () => {
-  const [tours, setTours] = useState();
+  const [tours, setTours] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
   const removeTour = (id) => {
