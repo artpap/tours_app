@@ -18,13 +18,18 @@ const App = () => {
 
     try {
       const response = await fetch(url);
+
       if (!response.ok) {
         setIsLoading(false);
         return;
       }
+
       const tours = await response.json();
+
       setTours(tours);
+      setIsLoading(false);
     } catch (error) {
+      setIsLoading(false);
       console.log(error);
     }
     // hide loading
