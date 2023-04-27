@@ -3,8 +3,6 @@ import React from 'react';
 import Tour from './Tour';
 
 const Tours = ({ tours, removeTour }) => {
-  const [toursArr, setToursArr] = useState();
-
   return (
     <section>
       <div className='title'>
